@@ -1,3 +1,3 @@
-f=i=>i.split('\n').map(s=>Math.max(...i.split(' '))-Math.min(...i.split(' '))).reduce((a,b)=>a+b)
+f=i=>i.split('\n').map(a=>Math.max(...a.split(' '))-Math.min(...a.split(' '))).reduce((a,b)=>a+b)
 
 // f(input)
