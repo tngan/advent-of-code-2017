@@ -12,3 +12,21 @@ while(pointer>=0 && pointer<=input.length) {
 }
 
 console.log(counter-1);
+
+// part 2 lol
+
+pointer = 0;
+counter = 0;
+
+while(pointer>=0 && pointer<=input.length) {
+  counter++;
+  instruction = input[pointer]
+  pointer += instruction
+  if (instruction >= 3) {
+    input[pointer-instruction] = input[pointer-instruction]-1
+  } else {
+    input[pointer-instruction] = input[pointer-instruction]+1
+  }
+}
+
+console.log(counter-1);
