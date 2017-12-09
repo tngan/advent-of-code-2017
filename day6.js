@@ -19,6 +19,9 @@ function run() {
     if (!memory.has(String(input.map(String)))) {
       memory.add(String(input.map(String)));
     } else {
+      // part2 answer
+      const found = [...memory].indexOf(String(input.map(String)));
+      console.log('boom', [...memory].length - found);
       break;
     }
   }
